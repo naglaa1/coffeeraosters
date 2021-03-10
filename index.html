@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
     <title>coffeeroasters</title>
 </head>
 <body>
@@ -11,11 +12,18 @@
     <section class="header-links">
         <nav>
             <header class="logo">
-                <h2><a href="#"></a><img src="imgs/logo.svg" alt="logo"></h2>
+                <h2><a href="index.html"></a><img src="imgs/logo.svg" alt="logo"></h2>
             </header>
+            <div class="hambIcon">
+                <img src="imgs/icon-hamburger.svg" alt="">
+            </div>
+            <div class="close">
+                <img class="close" src="imgs/icon-close.svg" alt="">
+
+            </div>
             <div class="navbar">
                 <ul class="links">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a> </li>
                     <li><a href="plan.html">Create your plan</a></li>
                 </ul>
@@ -27,53 +35,55 @@
     <section class="landing">
         <div class="container">
             <div class="landing-home">
-                    <p>Great coffee made simple.</p>
-                    <p>Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
-                    <button>Create your plan</button>
+                    <p>Great coffee<br> made simple.</p>
+                    <p>Start your mornings with the world’s best coffees. Try our<br> expertly curated artisan coffees from our best roasters<br> delivered directly to your door, at your schedule.</p>
+                    <button><a href="plan.html">Create your plan</a> </button>
             </div>
         </div>
     </section>
     <!-- End landing -->
     <!-- Start collection -->
     <section class="collection">
-        <header>
-            <h2> Our collection</h2>
-        </header>
-        <div class="collection-type">
-            <div class="coffe-type">
-                <div class="imag">
-                    <img src="imgs/image-gran-espresso.png" alt="gran espresso">
+        <div class="container">
+            <header>
+                <h2> Our collection</h2>
+            </header>
+            <div class="collection-type">
+                <div class="coffe-type">
+                    <div class="imag">
+                        <img src="imgs/image-gran-espresso.png" alt="gran espresso">
+                    </div>
+                    <div class="coffe-info">
+                        <h3>Gran Espresso</h3>
+                        <p>Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+                    </div>
                 </div>
-                <div class="coffe-info">
-                    <h3>Gran Espresso</h3>
-                    <p>Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+                <div class="coffe-type">
+                    <div class="imag">
+                        <img src="imgs/image-planalto.png" alt="gran espresso">
+                    </div>
+                    <div class="coffe-info">
+                        <h3>Planalto</h3>
+                        <p>Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
+                    </div>
                 </div>
-            </div>
-            <div class="coffe-info">
-                <div class="imag">
-                    <img src="imgs/image-planalto.png" alt="gran espresso">
+                <div class="coffe-type">
+                    <div class="imag">
+                        <img src="imgs/image-piccollo.png" alt="gran espresso">
+                    </div>
+                    <div class="coffe-info">
+                        <h3>Piccollo</h3>
+                        <p>Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
+                    </div>
                 </div>
-                <div class="coffe-info">
-                    <h3>Planalto</h3>
-                    <p>Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
-                </div>
-            </div>
-            <div class="coffe-info">
-                <div class="imag">
-                    <img src="imgs/image-piccollo.png" alt="gran espresso">
-                </div>
-                <div class="coffe-info">
-                    <h3>Piccollo</h3>
-                    <p>Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
-                </div>
-            </div>
-            <div class="coffe-info">
-                <div class="imag">
-                    <img src="imgs/image-danche.png" alt="gran espresso">
-                </div>
-                <div class="coffe-info">
-                    <h3>Danche </h3>
-                    <p>Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
+                <div class="coffe-type">
+                    <div class="imag">
+                        <img src="imgs/image-danche.png" alt="gran espresso">
+                    </div>
+                    <div class="coffe-info">
+                        <h3>Danche </h3>
+                        <p>Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -157,5 +167,6 @@
         </div>
     </footer>
     <!-- End footer -->
+    <script src="js/main.js"></script>
 </body>
 </html>

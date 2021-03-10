@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  height: 100%;
+}
+
+h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+}
+
+h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**Start Home Page**/
+/*Start header links*/
+.header-links {
+  width: 100%;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.header-links .logo {
+  cursor: pointer;
+}
+
+.header-links .hambIcon {
+  display: none;
+  cursor: pointer;
+}
+
+.header-links .close {
+  display: none;
+  cursor: pointer;
+}
+
+.header-links nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-links nav .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.header-links nav .navbar .links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header-links nav .navbar .links li {
+  margin-left: 2rem;
+}
+
+.header-links nav .navbar .links li a {
+  color: #83888F;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+@media (max-width: 360px) {
+  .header-links .hambIcon {
+    display: initial;
+  }
+  .hambIcon.hidden {
+    display: none;
+  }
+  .close.play {
+    display: initial;
+  }
+  .header-links .navbar {
+    display: none !important;
+  }
+  .navbar.show {
+    display: initial;
+  }
+}
+
+/*End header links*/
+/*Start landing*/
+.landing {
+  min-height: 93vh;
+  background-image: url(../imgs/image-hero-coffeepress.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.landing .landing-home {
+  text-align: left;
+  -webkit-transform: translateY(33%);
+          transform: translateY(33%);
+}
+
+.landing .landing-home p {
+  color: white;
+}
+
+.landing .landing-home p:nth-of-type(1) {
+  font-size: 4.6rem;
+  font-weight: bold;
+  font-family: 'Fraunces', serif;
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+
+.landing .landing-home p:nth-of-type(2) {
+  font-size: 1rem;
+  color: #FEFCF7;
+  font-family: 'Barlow', sans-serif;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+  word-spacing: 2px;
+}
+
+.landing .landing-home button {
+  padding: 1rem;
+  width: 13rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #0E8784;
+}
+
+.landing .landing-home button a {
+  font-size: 1.1rem;
+  font-family: 'Fraunces', serif;
+  color: #FEFCF7;
+}
+
+.landing .landing-home button:hover {
+  background-color: #73f5f3;
+  outline: none;
+}
+
+/*End landing*/
+/*Start collection*/
+.collection {
+  position: relative;
+}
+
+.collection header {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  opacity: .15;
+}
+
+.collection header h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 11vw;
+  color: #333D4B;
+}
+
+.collection .collection-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.collection .collection-type .coffe-type {
+  width: 24%;
+  text-align: center;
+}
+
+.collection .collection-type .coffe-type .imag {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.collection .collection-type .coffe-type .imag img {
+  width: 100%;
+}
+
+.collection .collection-type .coffe-type .coffe-info h3 {
+  font-size: 1.6rem;
+  color: #333D4B;
+  margin-bottom: 1.7rem;
+}
+
+.collection .collection-type .coffe-type .coffe-info p {
+  font-size: 1.1rem;
+}
+
+/*End collection*/
+/**End Home Page**/
+/********************************************************************************************************************************************/
+/*# sourceMappingURL=style.css.map */

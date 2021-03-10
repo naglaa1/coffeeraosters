@@ -1,0 +1,194 @@
+$dark-cyan: #0E8784;
+$dark-grisbleu: #333D4B;
+$light-cream: #FEFCF7;
+$grey: #83888F;
+$pale-orange: #FDD6BA;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Barlow', sans-serif; //for fontsize paragraph 16px 26px for navbar bold 12px 15px 
+}
+.container {
+    width: 85%;
+    margin: auto;
+    height: 100%;
+}
+h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+}
+h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;    
+}
+h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/**Start Home Page**/
+/*Start header links*/
+.header-links {
+    width: 100%;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    .logo {
+        cursor: pointer;
+    }
+    .hambIcon {
+        display: none;
+        cursor: pointer;
+    }
+    .close {
+        display: none;
+        cursor: pointer;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navbar {
+            display: flex;
+            flex-basis: 50%;
+            .links {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                li {
+                    margin-left: 2rem;
+                    a {
+                        color: $grey;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 12px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+    
+    .header-links .hambIcon {
+        display: initial;
+    }
+    .hambIcon.hidden {
+        display: none;
+    }
+    .close.play {
+        display: initial;
+    }
+    .header-links .navbar {
+        display: none !important;
+    }
+    .navbar.show {
+        display: initial ;
+    }
+    
+}
+/*End header links*/
+/*Start landing*/
+.landing {
+    min-height: 93vh;
+    background-image: url(../imgs/image-hero-coffeepress.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    .landing-home {
+        text-align: left;
+        transform: translateY(33%);
+        p {
+            color: white;
+            &:nth-of-type(1) {
+                font-size: 4.6rem;
+                font-weight: bold;
+                font-family: 'Fraunces', serif;
+                margin-bottom: 2rem;
+                line-height: 1;
+            }
+            &:nth-of-type(2) {
+                font-size: 1rem;
+                color: $light-cream;
+                font-family: 'Barlow', sans-serif;
+                margin-bottom: 3rem;
+                line-height: 1.5;
+                word-spacing: 2px;
+            }
+        }
+        button {
+            padding: 1rem;
+                width: 13rem;
+                border-radius: 5px;
+                border: none;
+                background-color: #0E8784;
+
+            a {
+                font-size: 1.1rem;
+                font-family: 'Fraunces', serif ;
+                color: #FEFCF7;
+            }
+            &:hover {
+                background-color: #73f5f3;
+                outline: none;
+            }
+        }
+    }
+}
+/*End landing*/
+/*Start collection*/
+.collection {
+    position: relative;
+    header {
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+        opacity: .15;
+        h2 {
+            font-family: 'Fraunces', serif;
+            font-size: 11vw;
+            color: $dark-grisbleu; 
+        }
+    }
+    .collection-type {
+        display: flex;
+        justify-content: space-between;
+        .coffe-type {
+            width: 24%;
+            text-align: center;
+            .imag {
+                width: 100%;
+                margin-bottom: 4rem;
+                img {
+                    width: 100%;
+                }
+            }
+            .coffe-info {
+                h3 {
+                    font-size: 1.6rem;
+                    color: $dark-grisbleu;
+                    margin-bottom: 1.7rem;
+                }
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+/*End collection*/
+
+
+
+/**End Home Page**/
+/********************************************************************************************************************************************/
