@@ -149,7 +149,8 @@ a {
 /*End landing*/
 /*Start collection*/
 .collection {
-    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 10rem;
     header {
         margin-top: 10rem;
         margin-bottom: 2rem;
@@ -158,11 +159,15 @@ a {
             font-family: 'Fraunces', serif;
             font-size: 11vw;
             color: $dark-grisbleu; 
+            text-align: center;
         }
     }
     .collection-type {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin-top: -5.3rem;
+        z-index: 5;
+        position: relative;
         .coffe-type {
             width: 24%;
             text-align: center;
@@ -170,7 +175,7 @@ a {
                 width: 100%;
                 margin-bottom: 4rem;
                 img {
-                    width: 100%;
+                    width: 14vw;
                 }
             }
             .coffe-info {
@@ -180,14 +185,76 @@ a {
                     margin-bottom: 1.7rem;
                 }
                 p {
-                    font-size: 1.1rem;
+                    font-size: 1.3vw;
+                    line-height: 1.5;
                 }
             }
         }
     }
 }
 /*End collection*/
-
+/*Start why us*/
+.why-us {
+    background-color: $dark-grisbleu;
+    margin-bottom: 28vw;
+    .choose-us {
+        display: flex;
+        flex-direction: column;
+        .choose-info {
+            color: #FEFCF7;
+            text-align: center;
+            margin-top: 5rem;
+            padding: 2vw 18vw 0 18vw;
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 3rem;
+            }
+            p {
+                font-size: 1.3rem;
+                line-height: 1.7;
+                font-family: 'Barlow', sans-serif;;
+            }
+        }
+        .our-advantage {
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(182px);
+            .advantage-detaile {
+                width: 31%;
+                background-color: #0E8784;
+                color: #FEFCF7;
+                text-align: center;
+                padding: 3vw;
+                border-radius: 10px;
+                img {
+                    width: auto;
+                    height: 72px;
+                    margin-top: 2vw;
+                    margin-bottom: 4vw;
+                }
+                h4 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1.5rem;
+                }
+                p {
+                    font-size: 1.3vw;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+}
+/*End why us*/
+/*Start how works*/
+.how-works {
+    .it-works {
+        h2 {
+            font-size: 1.2vw;
+            color: $dark-grisbleu;
+        }
+    }
+}
+/*End how works*/
 
 
 /**End Home Page**/

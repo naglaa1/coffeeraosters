@@ -181,7 +181,8 @@ a {
 /*End landing*/
 /*Start collection*/
 .collection {
-  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 10rem;
 }
 
 .collection header {
@@ -194,15 +195,18 @@ a {
   font-family: 'Fraunces', serif;
   font-size: 11vw;
   color: #333D4B;
+  text-align: center;
 }
 
 .collection .collection-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: -5.3rem;
+  z-index: 5;
+  position: relative;
 }
 
 .collection .collection-type .coffe-type {
@@ -216,7 +220,7 @@ a {
 }
 
 .collection .collection-type .coffe-type .imag img {
-  width: 100%;
+  width: 14vw;
 }
 
 .collection .collection-type .coffe-type .coffe-info h3 {
@@ -226,10 +230,90 @@ a {
 }
 
 .collection .collection-type .coffe-type .coffe-info p {
-  font-size: 1.1rem;
+  font-size: 1.3vw;
+  line-height: 1.5;
 }
 
 /*End collection*/
+/*Start why us*/
+.why-us {
+  background-color: #333D4B;
+  margin-bottom: 28vw;
+}
+
+.why-us .choose-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.why-us .choose-us .choose-info {
+  color: #FEFCF7;
+  text-align: center;
+  margin-top: 5rem;
+  padding: 2vw 18vw 0 18vw;
+}
+
+.why-us .choose-us .choose-info h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.why-us .choose-us .choose-info p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  font-family: 'Barlow', sans-serif;
+}
+
+.why-us .choose-us .our-advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: translateY(182px);
+          transform: translateY(182px);
+}
+
+.why-us .choose-us .our-advantage .advantage-detaile {
+  width: 31%;
+  background-color: #0E8784;
+  color: #FEFCF7;
+  text-align: center;
+  padding: 3vw;
+  border-radius: 10px;
+}
+
+.why-us .choose-us .our-advantage .advantage-detaile img {
+  width: auto;
+  height: 72px;
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+}
+
+.why-us .choose-us .our-advantage .advantage-detaile h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.why-us .choose-us .our-advantage .advantage-detaile p {
+  font-size: 1.3vw;
+  line-height: 2;
+}
+
+/*End why us*/
+/*Start how works*/
+.how-works .it-works h2 {
+  font-size: 1.2vw;
+  color: #333D4B;
+}
+
+/*End how works*/
 /**End Home Page**/
 /********************************************************************************************************************************************/
 /*# sourceMappingURL=style.css.map */
