@@ -238,7 +238,7 @@ a {
 /*Start why us*/
 .why-us {
   background-color: #333D4B;
-  margin-bottom: 28vw;
+  margin-bottom: 28vh;
 }
 
 .why-us .choose-us {
@@ -264,7 +264,7 @@ a {
 }
 
 .why-us .choose-us .choose-info p {
-  font-size: 1.3rem;
+  font-size: 1.45vw;
   line-height: 1.7;
   font-family: 'Barlow', sans-serif;
 }
@@ -276,8 +276,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transform: translateY(182px);
-          transform: translateY(182px);
+  -webkit-transform: translateY(154px);
+          transform: translateY(154px);
 }
 
 .why-us .choose-us .our-advantage .advantage-detaile {
@@ -297,23 +297,155 @@ a {
 }
 
 .why-us .choose-us .our-advantage .advantage-detaile h4 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
 }
 
 .why-us .choose-us .our-advantage .advantage-detaile p {
-  font-size: 1.3vw;
-  line-height: 2;
+  font-size: 1.28vw;
+  line-height: 1.6;
 }
 
 /*End why us*/
 /*Start how works*/
+.how-works {
+  margin-top: 26vw;
+  padding-bottom: 2vw;
+  margin-bottom: 6vw;
+}
+
 .how-works .it-works h2 {
-  font-size: 1.2vw;
+  font-size: 2vw;
+  color: #83888F;
+}
+
+.how-works .it-works ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.how-works .it-works ul li {
+  width: 33.333%;
+  position: relative;
+}
+
+.how-works .it-works ul li::before {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  border: 2px solid #0E8784;
+  border-radius: 50%;
+  display: block;
+  margin: 5vw 0;
+  background-color: #FEFCF7;
+}
+
+.how-works .it-works ul li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #FDD6BA;
+  top: 50%;
+  left: -100%;
+  z-index: -1;
+}
+
+.how-works .it-works ul li:first-child::after {
+  content: none;
+}
+
+.how-works .it-works .steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.how-works .it-works .steps .steps-info {
+  width: 28%;
+}
+
+.how-works .it-works .steps .steps-info h3 {
+  margin-bottom: 2.4vw;
+  font-size: 2.9vw;
   color: #333D4B;
 }
 
+.how-works .it-works .steps .steps-info h3:first-child {
+  color: #FDD6BA;
+  font-size: 5vw;
+}
+
+.how-works .it-works .steps .steps-info p {
+  font-size: 1.34vw;
+  line-height: 1.6;
+  text-align: left;
+  color: #333D4B;
+  margin-bottom: 3vw;
+}
+
+.how-works .it-works button {
+  width: 16vw;
+  height: 4vw;
+  border-radius: 5px;
+  border: none;
+  background-color: #0E8784;
+  color: white;
+  font-size: 1.3vw;
+  font-family: 'Fraunces', serif;
+  font-weight: normal;
+  font-family: 'Fraunces', serif;
+  margin-top: 2vw;
+  margin-bottom: 5vw;
+}
+
 /*End how works*/
+/*Start footer*/
+footer {
+  background-color: #333D4B;
+}
+
+footer .our-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .our-footer .logo {
+  -webkit-filter: brightness();
+          filter: brightness();
+}
+
+footer .our-footer .footer-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .our-footer .footer-links ul li a {
+  color: #FEFCF7;
+}
+
+footer .our-footer .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*Start footer*/
 /**End Home Page**/
 /********************************************************************************************************************************************/
 /*# sourceMappingURL=style.css.map */
