@@ -328,24 +328,24 @@ a {
 /*Start footer*/
 footer {
     background-color: $dark-grisbleu;
+    padding: 4vw 0;
     .our-footer {
         display: flex;
         justify-content: space-between;
         .logo {
-            filter: brightness();
-            a {
-                img {
-
-                }
-            }
+            fill: #fff;
         }
         .footer-links {
+            width: 45%;
             ul {
                 display: flex;
-                justify-content: space-between;
                 li {
+                    margin-right: 2vw;
                     a {
-                        color: $light-cream;
+                        color: $grey;
+                        font-size: .8vw;
+                        text-transform: uppercase;
+                        font-family: 'Fraunces', serif;;
                     }
                 }
             }
@@ -353,10 +353,11 @@ footer {
         .footer-social {
             display: flex;
             justify-content: space-between;
+            width: 8vw;
             p {
                 a {
                     img {
-
+                        width: 100%;
                     }
                 }
             }
