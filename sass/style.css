@@ -124,7 +124,7 @@ a {
 /*End header links*/
 /*Start landing*/
 .landing {
-  min-height: 93vh;
+  min-height: 90vh;
   background-image: url(../imgs/image-hero-coffeepress.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -134,8 +134,11 @@ a {
 
 .landing .landing-home {
   text-align: left;
-  -webkit-transform: translateY(33%);
-          transform: translateY(33%);
+  position: absolute;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
 }
 
 .landing .landing-home p {
@@ -143,7 +146,7 @@ a {
 }
 
 .landing .landing-home p:nth-of-type(1) {
-  font-size: 4.6rem;
+  font-size: 5.6vw;
   font-weight: bold;
   font-family: 'Fraunces', serif;
   margin-bottom: 2rem;
@@ -151,7 +154,7 @@ a {
 }
 
 .landing .landing-home p:nth-of-type(2) {
-  font-size: 1rem;
+  font-size: 1.2vw;
   color: #FEFCF7;
   font-family: 'Barlow', sans-serif;
   margin-bottom: 3rem;
@@ -285,7 +288,7 @@ a {
   background-color: #0E8784;
   color: #FEFCF7;
   text-align: center;
-  padding: 3vw;
+  padding: 3vw 3vw 4vw;
   border-radius: 10px;
 }
 
@@ -304,6 +307,7 @@ a {
 .why-us .choose-us .our-advantage .advantage-detaile p {
   font-size: 1.28vw;
   line-height: 1.6;
+  font-family: 'Barlow', sans-serif;
 }
 
 /*End why us*/
@@ -311,7 +315,7 @@ a {
 .how-works {
   margin-top: 26vw;
   padding-bottom: 2vw;
-  margin-bottom: 6vw;
+  margin-bottom: 7vw;
 }
 
 .how-works .it-works h2 {
@@ -401,13 +405,19 @@ a {
   font-family: 'Fraunces', serif;
   margin-top: 2vw;
   margin-bottom: 5vw;
+  cursor: pointer;
+}
+
+.how-works .it-works button:hover {
+  background-color: #73f5f3;
 }
 
 /*End how works*/
 /*Start footer*/
 footer {
   background-color: #333D4B;
-  padding: 4vw 0;
+  padding: 2.5vw 0;
+  cursor: pointer;
 }
 
 footer .our-footer {
@@ -417,6 +427,9 @@ footer .our-footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .our-footer .logo {
@@ -461,4 +474,84 @@ footer .our-footer .footer-social p a img {
 /*Start footer*/
 /**End Home Page**/
 /********************************************************************************************************************************************/
+/********************************************************************************************************************************************/
+/**************************************************************START ABOUT US PAGE********************************************************/
+.presentation {
+  background-image: url("../imgs/image-hero-whitecup.jpg");
+  min-height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 12vw;
+}
+
+.presentation .landing-about {
+  text-align: left;
+  position: absolute;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+.presentation .landing-about p {
+  color: white;
+}
+
+.presentation .landing-about p:nth-of-type(1) {
+  font-size: 3vw;
+  font-weight: bold;
+  font-family: 'Fraunces', serif;
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+
+.presentation .landing-about p:nth-of-type(2) {
+  font-size: 1.2vw;
+  color: #FEFCF7;
+  font-family: 'Barlow', sans-serif;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+  word-spacing: 2px;
+}
+
+/*satrt commitment*/
+.commitment .commite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.commitment .commite .img-commite {
+  width: 45%;
+}
+
+.commitment .commite .img-commite img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.commitment .commite .info-commite {
+  width: 45%;
+}
+
+.commitment .commite .info-commite h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 4vw;
+  color: #333D4B;
+  margin-bottom: 3vw;
+}
+
+.commitment .commite .info-commite p {
+  font-family: 'Barlow', sans-serif;
+  color: #83888F;
+  font-size: 1.15vw;
+  line-height: 1.6;
+}
+
+/*End commitment*/
 /*# sourceMappingURL=style.css.map */
