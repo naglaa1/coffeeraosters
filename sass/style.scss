@@ -418,23 +418,26 @@ footer {
 }
 /*satrt commitment*/
 .commitment {
+    margin-bottom: 18vw;
     .commite {
         display: flex;
         justify-content: space-between;
+        position: relative;
         .img-commite {
-            width: 45%;
+            width: 37%;
             img {
                 width: 100%;
-                border-radius: 24px;
+                border-radius: 9px;
             }
         }
         .info-commite {
             width: 45%;
+            margin: auto;
             h2 {
                 font-family: 'Fraunces', serif;
-                font-size: 4vw;
+                font-size: 3vw;
                 color: $dark-grisbleu;
-                margin-bottom: 3vw;
+                margin-bottom: 2.2vw;
             }
             p {
                 font-family: 'Barlow', sans-serif;
@@ -446,3 +449,39 @@ footer {
     }
 }
 /*End commitment*/
+/*Start quality */
+.quality {
+    background-image: url('../imgs/bg-quality.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 12vw;
+    .quality-content {
+        display:  flex;
+        justify-content: space-between;
+        position: relative;
+        .quality-info {
+            width: 47%;
+            margin-top: 6.5vw;
+            h2 {
+                margin-bottom: 2.7vw;
+                font-size: 3vw;
+                color: $light-cream;
+            }
+            p {
+                font-size: 1.17vw;
+                line-height: 1.7;
+                font-family: 'Barlow', sans-serif;
+                color: #dcd9d9;
+            }
+        }
+        .quality-img {
+            width: 42%;
+            transform: translateY(-20%);
+            img {
+                width: 100%;
+                border-radius: 6px;
+            }
+        }
+    }
+}
+/*End quality */
