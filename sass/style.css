@@ -565,7 +565,7 @@ footer .our-footer .footer-social p a img {
   background-image: url("../imgs/bg-quality.png");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 12vw;
+  margin-bottom: 9vw;
 }
 
 .quality .quality-content {
@@ -608,4 +608,313 @@ footer .our-footer .footer-social p a img {
 }
 
 /*End quality */
+/*Start headquarters*/
+.headquarters {
+  margin-bottom: 12vw;
+}
+
+.headquarters .quarters-content h3 {
+  color: #83888F;
+  font-size: 1.8vw;
+  margin-bottom: 5vw;
+}
+
+.headquarters .quarters-content .quarters-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headquarters .quarters-content .quarters-info article {
+  width: 30%;
+}
+
+.headquarters .quarters-content .quarters-info article .paye-logo {
+  margin-bottom: 3vw;
+}
+
+.headquarters .quarters-content .quarters-info article h2 {
+  color: #333D4B;
+  font-family: 'Fraunces', serif;
+  font-size: 2.5vw;
+  margin-bottom: 1.8vw;
+}
+
+.headquarters .quarters-content .quarters-info article p {
+  font-size: 1.3vw;
+  line-height: 1.5;
+  color: #333D4B;
+  font-family: 'Barlow', sans-serif;
+}
+
+/*End headquarters*/
+/**End About Page**/
+/********************************************************************************************************************************************/
+/********************************************************************************************************************************************/
+/**************************************************************START Plane PAGE********************************************************/
+/*Start landing plan*/
+.landplan {
+  background-image: url("../imgs/image-hero-blackcup.jpg");
+  min-height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 12vw;
+}
+
+.landplan .landing-plan {
+  text-align: left;
+  position: absolute;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+.landplan .landing-plan p {
+  color: white;
+}
+
+.landplan .landing-plan p:nth-of-type(1) {
+  font-size: 5.5vw;
+  font-weight: bold;
+  font-family: 'Fraunces', serif;
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+
+.landplan .landing-plan p:nth-of-type(2) {
+  font-size: 1.2vw;
+  color: #FEFCF7;
+  font-family: 'Barlow', sans-serif;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+  word-spacing: 2px;
+}
+
+/*End landing plan*/
+/*Start choose-order*/
+.planing {
+  background-image: url("../imgs/bg-steps.png");
+  background-size: cover;
+  margin-top: 9vw;
+  padding-bottom: 4vw;
+  margin-bottom: 11vw;
+  border-radius: 7px;
+}
+
+.planing .plan-works h2 {
+  font-size: 2vw;
+  color: #83888F;
+}
+
+.planing .plan-works ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.planing .plan-works ul li {
+  width: 33.333%;
+  position: relative;
+  margin-top: 2vw;
+}
+
+.planing .plan-works ul li::before {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  border: 3px solid #0E8784;
+  border-radius: 50%;
+  display: block;
+  margin: 5vw 0;
+  background-color: transparent;
+}
+
+.planing .plan-works ul li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #FDD6BA;
+  top: 50%;
+  left: -96%;
+}
+
+.planing .plan-works ul li:first-child::after {
+  content: none;
+}
+
+.planing .plan-works .plan-steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.planing .plan-works .plan-steps .steps-info {
+  width: 28%;
+}
+
+.planing .plan-works .plan-steps .steps-info h3 {
+  margin-bottom: 2.6vw;
+  font-size: 2.9vw;
+  color: #FEFCF7;
+}
+
+.planing .plan-works .plan-steps .steps-info h3:first-child {
+  color: #FDD6BA;
+  font-size: 5vw;
+}
+
+.planing .plan-works .plan-steps .steps-info p {
+  font-size: 1.34vw;
+  line-height: 1.6;
+  text-align: left;
+  color: #FEFCF7;
+  margin-bottom: 3vw;
+  font-family: 'Barlow', sans-serif;
+}
+
+/*End choose-order*/
+/*Start demande*/
+.demande {
+  margin-bottom: 7vw;
+}
+
+.demande .demande-step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.demande .demande-step .prefix-demande {
+  width: 22%;
+}
+
+.demande .demande-step .prefix-demande .prefix-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2vw 0;
+}
+
+.demande .demande-step .prefix-demande .prefix-data:not(:last-child) {
+  border-bottom: 1px solid  #a0a5ac75;
+}
+
+.demande .demande-step .prefix-demande .prefix-data p {
+  font-size: 1.8vw;
+  font-weight: bold;
+  font-family: 'Fraunces', serif;
+  color: #83888fc4;
+}
+
+.demande .demande-step .prefix-demande .prefix-data p:first-child {
+  color: #9ea4ac99;
+  margin-right: 2vw;
+}
+
+.demande .demande-step .way-demande {
+  width: 67%;
+}
+
+.demande .demande-step .way-demande .question .question-kind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1vw;
+}
+
+.demande .demande-step .way-demande .question .question-kind h2 {
+  font-size: 3.1vw;
+  color: #83888F;
+}
+
+.demande .demande-step .way-demande .question .choose-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.demande .demande-step .way-demande .question .choose-option .option-info {
+  width: 31%;
+  margin-top: 4vw;
+  margin-bottom: 6vw;
+  background-color: #f7f1f9;
+  border-radius: 6px;
+  padding: 2vw;
+}
+
+.demande .demande-step .way-demande .question .choose-option .option-info h3 {
+  color: #333D4B;
+  margin: .8vw 0;
+  font-size: 1.8vw;
+}
+
+.demande .demande-step .way-demande .question .choose-option .option-info p {
+  font-family: 'Barlow', sans-serif;
+  margin-bottom: 4.5vw;
+  line-height: 1.6;
+  font-size: 1.28vw;
+}
+
+.demande .demande-step .way-demande .order .order-summary {
+  background-color: #333D4B;
+  padding: 2.6vw;
+  border-radius: 6px;
+}
+
+.demande .demande-step .way-demande .order .order-summary h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.5vw;
+  color: grey;
+  margin-bottom: 1vw;
+}
+
+.demande .demande-step .way-demande .order .order-summary p {
+  color: #FEFCF7;
+  font-size: 1.9vw;
+  line-height: 1.6;
+  font-family: 'Fraunces', serif;
+}
+
+.demande .demande-step .way-demande .order .order-summary p span {
+  color: #0E8784;
+}
+
+.demande .demande-step .way-demande .order button {
+  background-color: #0E8784;
+  background-color: #0E8784;
+  margin: 4vw 0;
+  width: 17vw;
+  height: 4vw;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5vw;
+  border: none;
+  -webkit-transform: translateX(228%);
+          transform: translateX(228%);
+  border-radius: 6px;
+}
+
+/*End demande*/
 /*# sourceMappingURL=style.css.map */
