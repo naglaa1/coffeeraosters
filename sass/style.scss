@@ -48,18 +48,26 @@ a {
     .hambIcon {
         display: none;
         cursor: pointer;
+        &.hidden {
+            display: none;
+        }
     }
     .close {
         display: none;
         cursor: pointer;
+        &.show {
+            display: block;
+        }
     }
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         .navbar {
-            display: flex;
             flex-basis: 50%;
+            &.active {
+                display: block;
+            }
             .links {
                 width: 100%;
                 display: flex;
@@ -78,22 +86,53 @@ a {
         }
     }
 }
-@media (max-width: 360px) {
-    
-    .header-links .hambIcon {
-        display: initial;
+@media (max-width: 767px) { /* mobile design*/
+    .header-links {
+        padding-right: 5vw;
+        padding-left: 5vw;
+        padding-top: 0;
     }
-    .hambIcon.hidden {
+    .header-links .logo img {
+        width: 42vw;
+    }
+    .header-links .hambIcon {
+        display: block;
+    }
+    .header-links .hambIcon  {
+        display: block;
+        position: absolute;
+        top: 4vw; 
+        right: 6vw;
+    }
+    
+    .header-links .close  {
+        position: absolute;
+        top: 4vw; 
+        right: 6vw;
+    }
+    .header-links nav {
+        flex-direction: column;
+        align-items: flex-start; // for putting all component in left side
+        margin-top: 3vw;
+    }
+    .header-links nav .navbar {
+        width: 100%;
+        margin-top: 14vw;
         display: none;
     }
-    .close.play {
-        display: initial;
+    .header-links nav .links {
+        flex-direction: column;
+        text-align: center;
     }
-    .header-links .navbar {
-        display: none !important;
+    .header-links nav .navbar .links li {
+        margin-bottom: 8vw;
     }
-    .navbar.show {
-        display: initial ;
+    .header-links nav .navbar .links li a {
+        color: $dark-grisbleu;
+        font-weight: bold;
+        font-size: 5vw;
+        text-transform: none;
+        font-family: 'Fraunces', serif;
     }
     
 }

@@ -57,9 +57,17 @@ a {
   cursor: pointer;
 }
 
+.header-links .hambIcon.hidden {
+  display: none;
+}
+
 .header-links .close {
   display: none;
   cursor: pointer;
+}
+
+.header-links .close.show {
+  display: block;
 }
 
 .header-links nav {
@@ -75,11 +83,12 @@ a {
 }
 
 .header-links nav .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+.header-links nav .navbar.active {
+  display: block;
 }
 
 .header-links nav .navbar .links {
@@ -103,21 +112,61 @@ a {
   font-size: 12px;
 }
 
-@media (max-width: 360px) {
-  .header-links .hambIcon {
-    display: initial;
+@media (max-width: 767px) {
+  /* mobile design*/
+  .header-links {
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-top: 0;
   }
-  .hambIcon.hidden {
+  .header-links .logo img {
+    width: 42vw;
+  }
+  .header-links .hambIcon {
+    display: block;
+  }
+  .header-links .hambIcon {
+    display: block;
+    position: absolute;
+    top: 4vw;
+    right: 6vw;
+  }
+  .header-links .close {
+    position: absolute;
+    top: 4vw;
+    right: 6vw;
+  }
+  .header-links nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 3vw;
+  }
+  .header-links nav .navbar {
+    width: 100%;
+    margin-top: 14vw;
     display: none;
   }
-  .close.play {
-    display: initial;
+  .header-links nav .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
-  .header-links .navbar {
-    display: none !important;
+  .header-links nav .navbar .links li {
+    margin-bottom: 8vw;
   }
-  .navbar.show {
-    display: initial;
+  .header-links nav .navbar .links li a {
+    color: #333D4B;
+    font-weight: bold;
+    font-size: 5vw;
+    text-transform: none;
+    font-family: 'Fraunces', serif;
   }
 }
 
