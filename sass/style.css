@@ -9,6 +9,8 @@
 
 body {
   font-family: 'Barlow', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -127,7 +129,7 @@ a {
   font-size: 12px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   /* mobile design*/
   .container {
     width: 98%;
@@ -191,13 +193,13 @@ a {
 }
 
 /* media query for tablets*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 501px) and (max-width: 959px) {
   .header-links nav {
     margin-bottom: 6vw;
     margin-top: 2vw;
   }
   .header-links nav .navbar .links li {
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
   .header-links nav .navbar .links li a {
     font-size: 2vw;
@@ -264,7 +266,7 @@ a {
   outline: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   section {
     width: 90%;
     margin: 0 auto;
@@ -297,9 +299,18 @@ a {
 }
 
 /* media query for tablets*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 501px) and (max-width: 959px) {
+  .container {
+    width: 85%;
+    margin: auto;
+    height: 100%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 959px) {
   .landing {
     background-image: url("../imgs/image-hero-tables-coffeepress.jpg");
+    background-size: cover;
     height: auto !important;
     padding-bottom: 26vw;
   }
@@ -380,7 +391,7 @@ a {
   line-height: 1.5;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   .collection {
     margin-bottom: 7rem;
   }
@@ -419,7 +430,7 @@ a {
 }
 
 /* media query for tablets*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 501px) and (max-width: 959px) {
   .collection {
     margin-bottom: 7rem;
   }
@@ -481,6 +492,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .why-us .choose-us .choose-info {
@@ -539,7 +551,7 @@ a {
   font-family: 'Barlow', sans-serif;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   .why-us {
     margin-bottom: 140vh;
     min-height: 247vw;
@@ -584,6 +596,60 @@ a {
     font-size: 5.55vw;
     line-height: 1.6;
     padding-bottom: 12vw;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 959px) {
+  .why-us {
+    margin-bottom: 34rem;
+    min-height: 100vh;
+    padding-bottom: 32rem;
+  }
+  .why-us .choose-us .choose-info h2 {
+    margin-bottom: 2rem;
+  }
+  .why-us .choose-us .choose-info {
+    padding: 2vw 10vw 0 10vw;
+  }
+  .why-us .choose-us .choose-info p {
+    font-size: 1.97vw;
+    line-height: 2;
+    color: #dad5d5;
+  }
+  .why-us .choose-us .our-advantage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2rem;
+    position: absolute;
+    top: 13rem;
+    left: 0;
+    width: 100%;
+  }
+  .why-us .choose-us .our-advantage .advantage-detaile {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .why-us .choose-us .our-advantage .advantage-detaile .offers {
+    width: 65%;
+  }
+  .why-us .choose-us .our-advantage .advantage-detaile .offers p {
+    font-size: 1.27rem;
+  }
+  .why-us .choose-us .our-advantage .advantage-detaile h4 {
+    font-size: 1.8rem;
   }
 }
 
@@ -689,7 +755,7 @@ a {
   background-color: #73f5f3;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   .how-works .it-works {
     text-align: center;
   }
@@ -728,6 +794,30 @@ a {
     font-size: 4.3vw;
     margin-top: 6vw;
     margin-bottom: 17vw;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 959px) {
+  .how-works .it-works h2 {
+    font-size: 4vw;
+  }
+  .how-works .it-works .steps .steps-info h3:first-child {
+    font-size: 9vw;
+  }
+  .how-works .it-works .steps .steps-info {
+    width: 30%;
+  }
+  .how-works .it-works .steps .steps-info h3 {
+    font-size: 4vw;
+  }
+  .how-works .it-works .steps .steps-info p {
+    font-size: 1.8vw;
+    line-height: 2;
+  }
+  .how-works .it-works button {
+    width: 26vw;
+    height: 6vw;
+    font-size: 2.3vw;
   }
 }
 
@@ -790,7 +880,7 @@ footer .our-footer .footer-social p a img {
   width: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   footer {
     width: 98%;
     margin: auto;
@@ -824,6 +914,50 @@ footer .our-footer .footer-social p a img {
   }
   footer .our-footer .footer-social {
     width: 34%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 959px) {
+  footer {
+    width: 98%;
+    margin: auto;
+    margin-bottom: 14vw;
+    padding: 3rem 0;
+  }
+  footer .our-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .our-footer h2 {
+    margin-bottom: 1.5rem;
+  }
+  footer .our-footer h2 img {
+    width: 20rem;
+  }
+  footer .our-footer .footer-links {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  footer .our-footer .footer-links ul {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .our-footer .footer-links ul li {
+    margin-right: 3rem;
+  }
+  footer .our-footer .footer-links ul li:last-of-type {
+    margin-right: 0;
+  }
+  footer .our-footer .footer-links ul li a {
+    font-size: .8rem;
+    font-family: 'Barlow', sans-serif;
+  }
+  footer .our-footer .footer-social {
+    width: 9rem;
   }
 }
 
@@ -870,6 +1004,35 @@ footer .our-footer .footer-social p a img {
   margin-bottom: 3rem;
   line-height: 1.5;
   word-spacing: 2px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 85%;
+  }
+  .presentation {
+    background-image: url("../imgs/image-hero-mobile-whitecup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .presentation .landing-about {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  .presentation .present-text {
+    text-align: center;
+  }
+  .presentation .landing-about p:nth-of-type(1) {
+    font-size: 2rem;
+  }
+  .presentation .landing-about p:nth-of-type(2) {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
 }
 
 /*satrt commitment*/
