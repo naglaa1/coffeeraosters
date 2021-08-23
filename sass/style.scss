@@ -103,18 +103,19 @@ a {
         }
     }
 }
-@media (max-width: 500px) { /* mobile design*/
+@media (min-width: 320px) and (max-width: 560px) { /* mobile design*/
     .container {
         width: 98%;
     }
     .header-links {
-        padding: 5vw;
+        padding: 0 2em;
     }
     .header-links .log-hambourge {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 2.5rem;
     }
     .header-links nav .log-hambourge .logo {
         width: 60% !important;
@@ -218,7 +219,7 @@ a {
         }
     }
 }
-@media (max-width: 500px) {
+@media (min-width: 320px) and (max-width: 560px) {
     section {
         width: 90%;
         margin: 0 auto;
@@ -330,7 +331,7 @@ a {
         }
     }
 }
-@media (max-width: 500px) {
+@media (min-width: 320px) and (max-width: 560px) {
     .collection {
         margin-bottom: 7rem;
     }
@@ -458,7 +459,7 @@ a {
         }
     }
 }
-@media (max-width: 500px) {
+@media (min-width: 320px) and (max-width: 560px) {
     .why-us {
         margin-bottom: 140vh;
         min-height: 247vw;
@@ -632,7 +633,7 @@ a {
         }
     }
 }
-@media(max-width: 500px) {
+@media (min-width: 320px) and (max-width: 560px) {
     .how-works .it-works {
         text-align: center;
     }
@@ -735,7 +736,7 @@ footer {
         }
     }
 }
-@media (max-width: 500px) {
+@media (min-width: 320px) and (max-width: 560px) {
     footer {
         width: 98%;
         margin: auto;
@@ -817,6 +818,7 @@ footer {
     min-height: 75vh;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center ;
     border-radius: 10px;
     position: relative;
     margin-bottom: 12vw;
@@ -826,27 +828,31 @@ footer {
         top:55%;
         transform: translateY(-50%);
         width: 100%;
-        p {
-            color: white;
-            &:nth-of-type(1) {
-                font-size: 3vw;
-                font-weight: bold;
-                font-family: 'Fraunces', serif;
-                margin-bottom: 2rem;
-                line-height: 1;
-            }
-            &:nth-of-type(2) {
-                font-size: 1.2vw;
-                color: $light-cream;
-                font-family: 'Barlow', sans-serif;
-                margin-bottom: 3rem;
-                line-height: 1.5;
-                word-spacing: 2px;
+        .present-text {
+            width: 41%;
+            p {
+                color: white;
+                &:nth-of-type(1) {
+                    font-size: 2.8vw;
+                    font-weight: bold;
+                    font-family: 'Fraunces', serif;
+                    margin-bottom: 2rem;
+                    line-height: 1;
+                }
+                &:nth-of-type(2) {
+                    font-size: 1.2vw;
+                    color: #e2e1dd;
+                    font-family: 'Barlow', sans-serif;
+                    margin-bottom: 3rem;
+                    line-height: 1.5;
+                    word-spacing: 2px;
+                }
             }
         }
+        
     }
 }
-@media (max-width: 500px) {
+@media (min-width: 320px) and (max-width: 560px) {
     .container {
         width: 85%;
     }
@@ -854,23 +860,29 @@ footer {
         background-image: url('../imgs/image-hero-mobile-whitecup.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        height: auto;
+        height: 76vh;
     }
     .presentation .landing-about {
-        position: static;
-        transform: none;//we can use also this to reset the transforme translateY(0);
-        padding-top: 10rem;
-        padding-bottom: 5rem;
+        // position: static;
+        // transform: none;//we can use also this to reset the transforme translateY(0);
+        // padding-top: 10rem;
+        // padding-bottom: 5rem;
     }
-    .presentation .present-text {
+    .presentation .landing-about .present-text {
         text-align: center;
+        width: 89%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
-    .presentation .landing-about p:nth-of-type(1) {
-        font-size: 2rem;
+    .presentation .landing-about .present-text p:nth-of-type(1) {
+        font-size: 7.8vw;
+        margin-bottom: 1.5rem;
     }
-    .presentation .landing-about p:nth-of-type(2)  {
-        font-size: 1.2rem;
-        line-height: 1.6;
+    .presentation .landing-about .present-text p:nth-of-type(2)  {
+        font-size: 1rem;
+        line-height: 1.7;
     }
 }
 /*satrt commitment*/
@@ -905,13 +917,40 @@ footer {
         }
     }
 }
+@media (min-width: 320px) and (max-width: 560px) {
+    .commitment {
+        margin-top: 30vw;
+        margin-bottom: 30vw;
+    }
+    .commitment .commite {
+        flex-direction: column;
+        text-align: center;
+    }
+    .commitment .commite .img-commite {
+        width: 100%;
+        margin-bottom: 13vw;
+    }
+    .commitment .commite .info-commite {
+        width: 100%;
+    }
+    .commitment .commite .info-commite h2 {
+        font-size: 1.8rem;
+        margin-bottom: 8vw;
+    }
+    .commitment .commite .info-commite p {
+        font-size: .81rem;
+        line-height: 2;
+    }
+}
 /*End commitment*/
 /*Start quality */
 .quality {
     background-image: url('../imgs/bg-quality.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     margin-bottom: 9vw;
+    border-radius: 10px;
     .quality-content {
         display:  flex;
         justify-content: space-between;
@@ -940,6 +979,38 @@ footer {
             }
         }
     }
+}
+@media (min-width: 320px) and (max-width: 560px) {
+    .quality .quality-content {
+        flex-direction: column-reverse;
+        padding-bottom: 2em;
+    }
+    
+    .quality .quality-content .quality-img {
+        width: 100%;
+        background-image: url('../imgs/image-quality.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 10px;
+    }
+    .quality .quality-content .quality-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .quality .quality-content .quality-info {
+        width: 100%;
+        margin-bottom: 6.5vw;
+        text-align: center;
+    }
+    .quality .quality-content .quality-info h2 {
+        margin-bottom: 1.4rem;
+        font-size: 1.8rem;
+    }
+    .quality .quality-content .quality-info p {
+        font-size: 1rem;
+    }
+ 
 }
 /*End quality */
 /*Start headquarters*/
@@ -975,6 +1046,40 @@ footer {
         }
     }
 }
+@media (min-width: 320px) and (max-width: 560px) {
+    .headquarters .quarters-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: .8em;
+    }
+    .headquarters .quarters-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 2.7em;
+        margin-top: 3em;       
+    }
+    .headquarters .quarters-content .quarters-info {
+        flex-direction: column;
+        width: 100%;
+    }
+    .headquarters .quarters-content .quarters-info article {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5em;
+    }
+    .headquarters .quarters-content .quarters-info article .paye-logo {
+        margin-bottom: 2em;
+    }
+    .headquarters .quarters-content .quarters-info article h2 {
+        font-size: 1.7rem;
+        margin-bottom: .9em;
+    }
+    .headquarters .quarters-content .quarters-info article p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+}
 /*End headquarters*/
 
 /**End About Page**/
@@ -987,6 +1092,7 @@ footer {
     min-height: 75vh;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     border-radius: 10px;
     position: relative;
     margin-bottom: 12vw;
@@ -999,21 +1105,46 @@ footer {
         p {
             color: white;
             &:nth-of-type(1) {
-                font-size: 5.5vw;
+                font-size: 4.5rem;
                 font-weight: bold;
                 font-family: 'Fraunces', serif;
                 margin-bottom: 2rem;
                 line-height: 1;
             }
             &:nth-of-type(2) {
-                font-size: 1.2vw;
-                color: $light-cream;
+                font-size: 1rem;
+                color: #bfbfbd;
                 font-family: 'Barlow', sans-serif;
                 margin-bottom: 3rem;
                 line-height: 1.6;
                 word-spacing: 2px;
             }
         }
+    }
+}
+@media (min-width: 320px) and (max-width: 560px) {
+    .landplan {
+        background-image: url('../imgs/image-hero-blackcup-mobile.jpg');
+        min-height: 68vh;
+        margin-bottom: 7em;
+    }
+    .landplan .landing-plan {
+        top: 52%;
+        text-align: center;
+    }
+    .landplan .landing-plan p:nth-of-type(1) {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .landplan .landing-plan p:nth-of-type(2) {
+        font-size: .9rem;
+        text-align: center;
+        line-height: 2;
+    }
+}
+@media (min-width: 561px) and (max-width: 991px) {
+    .landplan {
+        background-image: url('../imgs/image-hero-blackcup-tablet.jpg');
     }
 }
 /*End landing plan*/
@@ -1086,6 +1217,37 @@ footer {
                 }
             }
         }
+    }
+}
+@media (min-width: 320px) and (max-width: 560px) {
+    .planing {
+        padding-bottom: 4em;
+    }
+    .planing .plan-works ul {
+        display: none;
+    }
+    .planing .plan-works .plan-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    .planing .plan-works .plan-steps .steps-info {
+        width: 100%;
+        text-align: center;
+        margin-top: 2.4em;
+    }
+    .planing .plan-works .plan-steps .steps-info h3:first-child {
+        font-size: 4.7rem;
+        margin-bottom: .3em;
+    }
+    .planing .plan-works .plan-steps .steps-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: .8em;
+    }
+    .planing .plan-works .plan-steps .steps-info p {
+        font-size: .81rem;
+        line-height: 2;
+        text-align: center;
+        color: #d4d2ce;
     }
 }
 /*End choose-order*/
@@ -1192,4 +1354,65 @@ footer {
         }
     }
 }
+@media (min-width: 320px) and (max-width: 560px) {
+    .demande .demande-step .prefix-demande {
+        display: none;
+
+    }
+    .demande .demande-step .way-demande {
+        width: 100%;
+    }
+    .demande .demande-step .way-demande .question .choose-option {
+        flex-direction: column;
+    }
+    .demande .demande-step .way-demande .question .choose-option .option-info {
+        width: 100%;
+        padding: 1.6rem 2rem 1rem 1.3rem;
+    }
+    .demande .demande-step .way-demande .question .question-kind {
+        margin-bottom: 1rem;
+        margin-top: 5rem;
+    }
+    .demande .demande-step .way-demande .question .question-kind h2 {
+        font-size: 1.5rem;
+        width: 14rem;
+    }
+    .demande .demande-step .way-demande .question .choose-option .option-info h3 {
+        font-size: 1.5rem;
+    }
+    .demande .demande-step .way-demande .question .choose-option .option-info p {
+        font-size: 1rem;
+    }
+    .demande .demande-step .way-demande .order {
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+    }
+    .demande .demande-step .way-demande .order .order-summary {
+        padding: 1rem 1.7rem 1.5rem;
+    }
+    .demande .demande-step .way-demande .order .order-summary h4 {
+        font-size: .9rem;
+        margin-bottom: .6rem;
+        margin-top: 1.2rem;
+        text-transform: uppercase;
+        font-family: 'Barlow', sans-serif;
+    }
+    .demande .demande-step .way-demande .order .order-summary p {
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+    .demande .demande-step .way-demande .order .order-button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .demande .demande-step .way-demande .order-button button {
+        transform: none;
+        width: 14rem;
+        height: 3.5rem;
+        font-size: 1.3rem;
+        margin-top: 3.5rem;
+    }
+}
+
 /*End demande*/
